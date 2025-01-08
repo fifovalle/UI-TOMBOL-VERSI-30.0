@@ -1,0 +1,72 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #0f0e17;
+}
+
+.tombol {
+  position: relative;
+  width: 150px;
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  background-color: #e53170;
+  overflow: hidden;
+}
+
+.tombol,
+.ikon-tombol,
+.teks-tombol {
+  transition: all 0.3s;
+}
+
+.tombol .teks-tombol {
+  transform: translateX(22px);
+  color: #fff;
+  font-weight: 600;
+}
+
+.tombol .ikon-tombol {
+  position: absolute;
+  transform: translateX(109px);
+  height: 100%;
+  width: 39px;
+  background-color: #e53170;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tombol .svg {
+  width: 20px;
+  fill: #fff;
+}
+
+.tombol:hover {
+  background: #e53170;
+}
+
+.tombol:hover .teks-tombol {
+  color: transparent;
+}
+
+.tombol:hover .ikon-tombol {
+  width: 148px;
+  transform: translateX(0);
+}
+
+.tombol:active .ikon-tombol {
+  background-color: black;
+}
+
+.tombol:active {
+  border: 1px solid black;
+}
